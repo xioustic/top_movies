@@ -1,14 +1,18 @@
-2015-07-25  
-__Dependencies__  
+2015-07-25
+
+Dependencies
+============
 1. You'll need MySQLdb in order to audit your Kodi/XBMC Database: https://pypi.python.org/pypi/MySQL-python
 2. You'll need PyQuery which powers the scraping mechanisms for retrieving movie information from the rating sites: https://pypi.python.org/pypi/pyquery
 
-__Present Limitations__  
+Present Limitations
+===================
 1. This will only operate on a MySQL database for Kodi.
 2. You must be somewhat familiar with your MySQL settings that Kodi uses, as well as the schema of your working database (database, table names, and column names).
 3. For auditing, this will only retrieve the top 25 movies (per combined score) for each year and check if it can find the corresponding movie in your Kodi database by IMDB id.
 
-__Basic Instructions__  
+Basic Instructions
+==================
 1. Install Python 2.7.
 2. Retrieve and install the dependencies above.
 3. Open main.py and modify the config for the range of years you want, and set the booleans for each aggregator source.
