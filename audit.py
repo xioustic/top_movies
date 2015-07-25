@@ -5,10 +5,6 @@ from urllib import quote
 
 config = {
   "dbfile": "top_movies.db",
-  "years": range(2015-25,2015),
-  "do_imdb": True,
-  "do_rt": True,
-  "do_mc": True,
   "mysql_addr": "192.168.1.122",
   "mysql_port": 3306,
   "mysql_user": "xbmc",
