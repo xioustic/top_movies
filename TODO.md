@@ -46,6 +46,7 @@ __Future Ideas__
     + Scalar Results Can:
         * Kill OR Add a Score Amount Per Threshold (>,>=,<,<=,==)
         * Add a Score Amount Per Value
+- Ability to Push Torrents to Torrent Clients or Watching Folders?
 - Ability to Use Put.IO to Get, Download, and Move Torrents?
     + Push Torrent to Put.IO
     + Wait for Torrent Completion
