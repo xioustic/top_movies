@@ -14,7 +14,7 @@ Targets for score aggregation include:
 - MetaCritic Yearly Rank (Out of 100)
 - MetaCritic User Rating
 
-Scores are aggregated, paired using normalized movie titles, and information scraped placed into a local SQlite database. Final score used in audit is calculated by normalizing all score aggregations 0 to 100 (higher is better) and then multiplying to get final score.
+Scores are aggregated, paired using normalized movie titles, and information scraped is placed into a local SQlite database. Final score used in audit is calculated by normalizing all score aggregations 1 to 100 (higher is better) and then multiplying to get final score.
 
 Dependencies
 ============
