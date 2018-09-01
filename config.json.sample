@@ -1,0 +1,7 @@
+{
+  "dbfile": "top_movies.db",
+  "movie_dirs": [
+    "/path/to/first",
+    "/path/to/second"
+  ]
+}
