@@ -1,10 +1,10 @@
-2015-07-25
+2018-09-01
 
 What This Does
 ==============
 The intent of this project is to assist with finding good movies, according to aggregated scores from various sources, and then checking to see if the movies exist in your movie collection.
 
-Presently, this is being developed for use with Kodi media libraries that are backed by MySQL. There is an intention to support other Kodi database stores in the future. Perhaps later support could be provided for a simple set of sanely named files/folders.
+As of 2018, this is being rewritten to not be used with Kodi media libraries and instead to audit folders with movies inside. It will index directories of movies as available or missing to compare with the results of the score aggregation. I don't plan to reintroduce Kodi support any time soon, but would be opened to making it a module.
 
 Targets for score aggregation include:
 - IMDB Yearly Rank (Out of 100)
@@ -18,9 +18,7 @@ Scores are aggregated, paired using normalized movie titles, and information scr
 
 Dependencies
 ============
-1. You'll need MySQLdb in order to audit your Kodi/XBMC Database: https://pypi.python.org/pypi/MySQL-python
-2. You'll need PyQuery which powers the scraping mechanisms for retrieving movie information from the rating sites: https://pypi.python.org/pypi/pyquery
-3. You'll probably need a MySQL browser to figure out your schema for the auditing configuration step; I'd recommend HeidiSQL: http://www.heidisql.com/
+1. You'll need PyQuery which powers the scraping mechanisms for retrieving movie information from the rating sites: https://pypi.python.org/pypi/pyquery
 
 Basic Instructions
 ==================
