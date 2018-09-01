@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 from pyquery import PyQuery as pq
 
 def getTop100ByYear(year):
