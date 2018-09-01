@@ -48,16 +48,27 @@ def getTop100ByYear(year):
 if __name__ == "__main__":
     import sys
 
-    try:
-        year_text = sys.argv[1]
-    except:
-        print 'Invalid number of arguments'
-        sys.exit(1)
+    def print_help():
+        print "Usage: ./"+sys.argv[0],"[-h | <year>]"
+        print "Print JSON of top 100 movies according to IMDB per given year."
+        print ""
+        print "  -h    Show this help."
 
     try:
-        year = int(year_text)
+        first_arg = sys.argv[1]
     except:
-        print 'Argument must be an integer'
+        print 'Error: Invalid number of arguments'
+        print_help()
+        sys.exit(1)
+
+    if first_arg == '-h':
+        print_help()
+        sys.exit()
+
+    try:
+        year = int(first_arg)
+    except:
+        print 'Error: Year must be an integer'
         sys.exit(1)
 
     a = getTop100ByYear(year)
