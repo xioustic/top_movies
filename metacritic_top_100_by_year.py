@@ -29,6 +29,30 @@ def getTop100ByYear(year):
     return results
     
 if __name__ == "__main__":
-    a = getTop100ByYear(2004)
-    for b in a:
-        print b
+    import sys
+
+    def print_help():
+        print "Usage: ./"+sys.argv[0],"[-h | <year>]"
+        print "Print JSON of top 100 movies according to Metacritic per given year."
+        print ""
+        print "  -h    Show this help."
+
+    try:
+        first_arg = sys.argv[1]
+    except:
+        print 'Error: Invalid number of arguments'
+        print_help()
+        sys.exit(1)
+
+    if first_arg == '-h':
+        print_help()
+        sys.exit()
+
+    try:
+        year = int(first_arg)
+    except:
+        print 'Error: Year must be an integer'
+        sys.exit(1)
+
+    a = getTop100ByYear(year)
+    print json.dumps(a, indent=2, sort_keys=True)
